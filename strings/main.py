@@ -40,4 +40,7 @@ print(chant)
 
 if (chant[len(chant):1] != " ") : print("laatste karakter geen spatie")
 
+good_chant = chant[len(chant):1] != " "
+
+print(good_chant)
 
