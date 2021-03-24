@@ -27,18 +27,17 @@ first_letter = player[:1]
 
 last_name_len = len(player[player.find(' '):-1])
 
-name_short = f'{player[:1]}{player[player.find(" "):]}'
+name_short = player[:1] + '.' + player[player.find(" "):]
 
 
 print(first_name)
 print(last_name_len)
 print(name_short)
 
-chant = f'{first_name}! ' * len(first_name)
+chant = f'{first_name}! ' * (len(first_name)-1)
 
 print(chant)
 
-good_chant = chant != chant[-1:chant.find(' ')]
+if (chant[len(chant):1] != " ") : print("laatste karakter geen spatie")
 
-print(good_chant)
 
