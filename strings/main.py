@@ -10,11 +10,11 @@ player_second_goal = 'Marco van Basten'
 goal_0 = 32
 goal_1 = 54
 
-scorers = player_first_goal + ' ' + str(goal_0) + ',' + player_second_goal + ' ' + str(goal_1)
+scorers = player_first_goal + ' ' + str(goal_0) + ', ' + player_second_goal + ' ' + str(goal_1)
 
 print(scorers)
 
-report = f'{player_first_goal} scores at {goal_0}nd minute\n{player_second_goal} scores at {goal_1}th minute'
+report = f'{player_first_goal} scored in the {goal_0}nd minute\n{player_second_goal} scored in the {goal_1}th minute'
 
 print(report)
 
@@ -34,13 +34,8 @@ print(first_name)
 print(last_name_len)
 print(name_short)
 
-chant = f'{first_name}! ' * (len(first_name)-1)
-
+chant = f'{first_name}! '*(len(first_name)-1)+ f'{first_name}!'
+good_chant = chant[len(chant):-1] != " "
 print(chant)
-
-if (chant[len(chant):1] != " ") : print("laatste karakter geen spatie")
-
-good_chant = chant[len(chant):1] != " "
-
 print(good_chant)
 
